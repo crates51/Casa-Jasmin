@@ -1,10 +1,31 @@
-#page_title {
+@font-face {
+  src: url(assets/fonts/CharterBoldItalicBT.ttf);
+  font-family: CharterBoldItalicBT; }
+
+@font-face2 {
+  src: url(assets/fonts/Mirandolina-Bold-Regular.ttf);
+  font-family: Mirandolina-Bold-Regular; }
+
+.page_title {
   color: white;
-  font-size: 350%;
-  font-family: 'M PLUS Rounded 1c', sans-serif; }
+  font-size: 330%;
+  letter-spacing: 3px;
+  font-family: CharterBoldItalicBT; }
+
+.page_subtitle {
+  color: white;
+  font-size: 95%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: -30px;
+  font-family: Mirandolina-Bold-Regular;
+  color: #8b8ca1; }
 
 body {
   background: #f2f2f2; }
+
+body, html {
+  height: 100%; }
 
 .purplecolor {
   background: #565978; }
@@ -27,3 +48,11 @@ ul.navbar-nav a {
 
 ul.navbar-nav a:hover {
   color: #edb83a !important; }
+
+ul.navbar-nav a.put_after:after {
+  font-family: "FontAwesome";
+  float: right;
+  content: "\f111";
+  font-size: 8px;
+  margin-left: 35px;
+  color: #edb83a; }
