@@ -1,0 +1,96 @@
+$colors:(
+  purple_primary:#565978,
+  purple_accent:#8b8ca1
+);
+
+@function color($color-name){
+  @return map-get($colors,$color-name)
+}
+@font-face{
+  src:url(assets/fonts/CharterBoldItalicBT.ttf);
+  font-family: CharterBoldItalicBT;
+}
+
+@font-face2{
+  src:url(assets/fonts/Mirandolina-Bold-Regular.ttf);
+  font-family: Mirandolina-Bold-Regular;
+}
+
+.page_title {
+  color: white;
+  font-size: 330%;
+  letter-spacing: 3px;
+  
+  // font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family:CharterBoldItalicBT ;
+  // font-weight: bold;
+}
+
+.page_subtitle{
+  color: white;
+  font-size: 95%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: -30px;
+  // font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family:Mirandolina-Bold-Regular ;
+  color:color(purple_accent);
+  // font-weight: bold;
+}
+
+
+body {
+  background: #f2f2f2; 
+  // #bg{ 
+  //   clip-path: circle(30.7% at 50% 0);
+  //   background:map-get($colors,primary);
+  //   position: relative;
+  //   left:49%;
+  //   width: 20%;
+  //   height: 20%;
+  //   transform: translate(-50%, 0);
+  // }
+}
+
+body,html{
+  height: 100%;
+} 
+
+.purplecolor {
+  background:color(purple_primary);
+}
+
+ul.navbar-nav {
+  a { 
+  // padding: 20px 20px 17px 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Merriweather";
+  font-weight: bold;
+  
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+
+  transition: .5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  }
+
+  a:hover { 
+  color: #edb83a !important;
+  }
+
+   a.put_after:after {
+    font-family: "FontAwesome";
+    float: right;
+    content: "\f111";
+    font-size: 8px;
+    margin-left: 35px;
+    color: #edb83a;
+}
+}
