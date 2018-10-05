@@ -1,5 +1,3 @@
-
-
 $( document ).ready(function() {
 	jQuery(".room-item .desc").fadeTo(0, 0);
 	$.easing.easeOutCubic = function (x, t, b, c, d) {
@@ -34,7 +32,19 @@ $( document ).ready(function() {
 		// $(".navbar-nav").on('click','.subClients .Left_Panel_Shortcuts a',function(e){
 
 	    $(".navbar-nav").on('click','.nav-item#booking',function(){
-	    	alert("Hello");
+	    	// alert("Hello");
 	    })
-
+	    
+	    $("body").on('click','#button_CazareStandard',function(){
+	    	alert("Hello There");
+	    })
+	    var popup=$('#pop_up');
+	    popup.hide();
+	     $("body").on('click','#balcony-facility',function(event){
+	    popup.show();
+	    	// alert(event.target.id);
+	    	var popper = new Popper($('#balcony-facility'), popup, {
+			    placement: 'top'
+			});
+	    })
 });

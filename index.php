@@ -15,8 +15,6 @@
     </head>
 
     <body>
-      
-       
             <div class="pt-5 pb-2 purplecolor">
                   <p class="pt-3 text-center page_title">Casa Jasmin</p>
                   <p class="text-center page_subtitle">Hotel & Resort</p>
@@ -83,9 +81,39 @@
                         </a>
                         <div class="desc">
                            <div> Oferind vedere atât la plajă, cât și la tabără, Camera Standard este perfectă pentru o vacanță la mare, atât cu familia cât și cu prietenii.Datorită deschiderii la tabără, atmosfera liniștită și aerul de mare vă vor crea o ambianţă de vacanță de neuitat.Aceasta vine, standard, inclusă cu 1 pat dublu mare sau 2 de o persoană, urmând, la nevoie, să fie adăugate paturi suplimentare.
-                       </div>  
-                        <div class="price">200 Lei<span>/Ziua</span></div>
-                        <a href="single-room.html" class="btn-border">Vedeţi Detalii</a>
+                           </div>  
+                           <div class="price">200 Lei<span>/Ziua</span></div>
+                           <div class="facilities">
+                               <span id="tv-facility">
+                                    <img src="src/assets/imgs/icons/flatTv_facility.png" alt=" " class="img-fluid">
+                                    TV cu ecran plat
+                               </span>
+                               <span id="minibar-facility">
+                                    <img src="src/assets/imgs/icons/minibar_facility.png" alt=" " class="img-fluid">
+                                    Minibar
+                               </span>
+                               <span id="shower-facility">
+                                    <div id="pop_up">
+                                        Popperjs popup
+                                    </div>
+                                    <img src="src/assets/imgs/icons/privateShower_facility.png" alt=" " class="img-fluid">
+                                    Baie privată
+                               </span>
+                               <span id="balcony-facility">
+                                    <img src="src/assets/imgs/icons/seaView_facility.png" alt=" " class="img-fluid">
+                                    Balcon,Vedere la mare
+                                </span>
+                               <span id="wifi-facility">
+                                    <img src="src/assets/imgs/icons/wifi_facility.png" alt=" " class="img-fluid">
+                                    WiFi gratuit inclus
+                               </span>
+                           </div>
+                           <div class="row nav-row justify-content-end">
+                                <a class="btn-info btn-sm">Mai multe detalii</a>
+                           </div>
+                           <div class="row nav-row justify-content-center">
+                                <a class="btn-success btn-lg" id="button_CazareStandard">Cazare!</a>
+                           </div>
                         </div>
                     </div>
                     <img src="src/assets/imgs/forMainThumbnails/thumbnail-1.jpeg" alt=" " class="img-fluid">
@@ -97,9 +125,31 @@
                         </a>
                         <div class="desc">
                             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iure consequuntur quae incidunt facere recusandae. Commodi laborum, voluptas minus eveniet. Illum delectus necessitatibus eum aliquid, error sit quae harum explicabo.</div>
-                            <div>Error, omnis, sequi. Itaque sit et eaque iure saepe modi eos iusto possimus culpa quaerat libero ipsam esse amet porro, tempore corrupti quae, nihil, eum. Incidunt quas, odit sint atque.</div>
+                            <div>Error, omnis, sequi. Itaque sit et eaque iure saepe modi eos iusto possimus culpa quaerat.</div>
                             <div class="price">400 Lei<span>/Ziua</span></div>
-                            <a href="single-room.html" class="btn-border">Vedeţi Detalii</a>
+                            <div class="facilities">
+                                <img src="src/assets/imgs/icons/flatTv_facility.png" alt=" " class="img-fluid">
+                                <span>TV cu ecran plat</span>
+                                <img src="src/assets/imgs/icons/minibar_facility.png" alt=" " class="img-fluid">
+                                <span>Minibar</span>
+                                <img src="src/assets/imgs/icons/privateShower_facility.png" alt=" " class="img-fluid">
+                                <span>Baie privată</span>
+                            <!--     <img src="src/assets/imgs/icons/seaView_facility.png" alt=" " class="img-fluid">
+                                <span>Balcon,Vedere la mare</span> -->
+                                <img src="src/assets/imgs/icons/terrace_facility.png" alt=" " class="img-fluid">
+                                <span style="color:#d29914">Terasă,Vedere la mare</span>
+
+                                <img src="src/assets/imgs/icons/wifi_facility.png" alt=" " class="img-fluid">
+                                <span>WiFi gratuit inclus</span>
+                            </div>
+
+                            <div class="row nav-row justify-content-end">
+                                <a class="btn-info btn-sm">Mai multe detalii</a>
+                           </div>
+
+                           <div class="row nav-row justify-content-center">
+                                <a class="btn-success btn-lg" id="button_CazareStandard">Cazare!</a>
+                           </div>
                         </div>
                     </div>
                     <img src="src/assets/imgs/forMainThumbnails/thumbnail-2.jpg" alt=" " class="img-fluid">
