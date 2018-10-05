@@ -1,0 +1,12 @@
+MVC
+
+M=Model
+V=View
+C=Controler
+
+
+npm run watch
+
+node_modules/.bin/webpack --watch --watch-poll --config=node_modules/laravel-mix/setup/webpack.config.js
+
+http://www.liontheme.net/corsiva-violet/index.html

@@ -1,0 +1,340 @@
+$colors:(
+  purple_primary:#565978,
+  purple_accent:#8b8ca1,
+  red_caption:#d22954,
+  purple_caption:#2e3579,
+  purple_desc:#63687b,
+  green_facilities:#0ab21b
+);
+
+@function color($color-name){
+  @return map-get($colors,$color-name)
+};
+
+.jPurplecolor {
+  background:color(purple_primary);
+}
+
+// Global
+h3,h4,h5,h6 {
+    // color:#333;
+  font-family: "Merriweather";      
+}
+
+                                  //-------------------------------Title-------------------------------
+
+.page_title {
+  color: white;
+  font-size: 360%;
+  letter-spacing: 3px;
+  
+  // font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family:CharterBoldItalicBT ;
+  // font-weight: bold;
+}
+
+.page_subtitle{
+  color: white;
+  font-size: 100%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: -30px;
+  // font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family:Mirandolina-Bold-Regular ;
+  color:color(purple_accent);
+  // font-weight: bold;
+}
+
+                                      //-------------------------------NavBar-------------------------------
+
+ul.navbar-effect{
+  a { 
+  // padding: 20px 20px 17px 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Merriweather";
+  font-weight: bold;
+  
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+
+  transition: .5s;
+  }
+
+  a:hover { 
+    color: #edb83a !important;
+  }
+
+  
+  #booking{
+    color:#38c172 !important;;
+    font-size: 18px;
+    position: relative;
+    bottom: 5px;
+  }
+
+  #booking:hover{
+    color:#2e9e5d !important;;
+  }
+
+  a.put_after:after {
+    font-family: "FontAwesome";
+    float: right;
+    content: "\f111";
+    font-size: 8px;
+    margin-left: 35px;
+    color: #edb83a;
+  }
+
+  a#booking:after {
+    position: relative;
+    top: 5px;
+  }
+} 
+                                      //-------------------------------Carousel-------------------------------
+
+.carousel-item{
+   img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-filter: opacity(.2);
+    filter: opacity(.2);
+  }
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    h1{
+      color:color(red_caption);
+      font-family: 'Cinzel', serif;
+      font-size: 72px;
+      font-weight: 400;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      padding: 10px 20px 10px 20px;
+
+    }
+    h3{
+      color:color(purple_caption);
+      font-size: 20px;
+      font-family: "Merriweather";
+      letter-spacing: 20px;
+      text-transform: uppercase;
+    }
+    .desc{
+      color:color(purple_desc);
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px 10px 20px;
+    }
+  }
+}
+
+                                          // -------------------------------Thumbnail-------------------------------
+
+.col-condensed {
+  margin-left: 0px;
+  margin-right: 0px;
+  div[class^="col-"]{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+                                      // -------------------------------Middle Section-------------------------------
+
+section {
+    background-position:0;
+    padding:80px 0;
+    background:#fff;
+    position:relative;
+    z-index:1
+}
+
+.icon-box {
+  transition:5s;
+  -webkit-transition: .5s;
+  min-height: 120px;
+  margin-bottom: 30px;
+
+  h3, h4, h5, h6 {
+    color: #2e357b;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-family: "Merriweather";      
+  }
+  h3 {
+      letter-spacing: -1px;
+      margin-top: 0;
+      font-size: 20px;
+  }
+  .text {
+    padding-left:110px;
+    color: #63687b;
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  i{
+    color:color(red_caption);
+    background: #f3f3f3;
+
+    position: absolute;
+    // color: #fff;
+    font-size: 40px;
+    padding: 40px 0;
+    text-align: center;
+    width: 80px;
+    // background: #404040;
+  }
+}
+  .icon-box, .icon-box i, .icon-box:hover, .icon-box:hover i {
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+.icon-box:hover i {
+    color: #EDB83A;
+    background: #f2f2f2;
+}
+
+
+section.dark {
+    background: #565978;
+}
+
+.side-bg .inner-padding {
+    padding: 40px 0;
+}
+
+                                      // -------------------------------Last Section-------------------------------
+
+.call-to-action {
+    background: #d1b069;
+}
+
+.btn-big-border {
+    color: #333;
+    text-transform: uppercase;
+    border: solid 2px #333;
+    padding: 15px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-decoration: none!important;
+}
+
+.btn-big-border:hover {
+    background: #222;
+    color: #fff;
+}
+
+                                      // -------------------------------Footer-------------------------------
+ 
+footer {
+  background: #212229;
+}
+
+footer {
+    color: #888;
+    padding: 80px 0 30px;
+    
+  a{
+    color: #fff;
+  }
+  a:hover, a:focus {
+      color: white;
+      text-decoration: underline;
+  }
+  h3{
+    color: #d1b069;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .bloglist-small {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-bottom: 10px; 
+      margin-bottom: 10px; 
+
+      .txt {
+        padding-left: 80px;
+      }
+      h5 {
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+    }
+  } 
+   ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+   li {
+     display: inline; 
+     padding: 0 10px 0 0; 
+  }
+   .date-box {
+    border: solid 1px #222;
+  }
+}
+
+.date-box {
+    width: 60px;
+    position: absolute;
+    text-align: center;
+    border: solid 1px #eee;
+
+    .day {
+      display: block;
+      font-size: 28px;
+      padding: 16px 0;
+      font-family: "Cinzel";
+      background: #404040;
+      color: #fff;
+    }
+    .month {
+       border-top: solid 1px #222;
+    }
+     .month {
+      font-size: 12px;
+      display: block;
+      color: #fff;
+    }
+}
+
+address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.428571429;
+    span {
+      display: block;
+      margin-bottom: 5px;
+       strong {
+        display: inline-block;
+        width: 60px;
+       }
+    }
+}
+
+
+footer .date-box .day, footer .date-box .month {
+    background: none;
+}

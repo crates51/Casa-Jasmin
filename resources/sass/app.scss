@@ -1,0 +1,32 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "../../FA/scss/fontawesome.scss";
+@import "../../FA/scss/solid.scss";
+@import "../../FA/scss/_icons.scss";
+@import "../../FA/scss/brands.scss";
+
+
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+//Custom CSS
+@import "costum";
+
+.user {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
