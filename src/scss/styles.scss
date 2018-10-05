@@ -6,7 +6,8 @@ $colors:(
   purple_accent:#8b8ca1,
   red_caption:#d22954,
   purple_caption:#2e3579,
-  purple_desc:#63687b
+  purple_desc:#63687b,
+  green_facilities:#0ab21b
 );
 
 @function color($color-name){
@@ -204,7 +205,7 @@ ul.navbar-nav {
     padding-right: 30px;
   }
   .desc-includes{
-      text-align: left;
+      // text-align: left;
       // margin-left: 40%;
     // transform: translate(-50%, 0);
 
@@ -212,16 +213,47 @@ ul.navbar-nav {
 
   .price {
       font-size: 32px;
-      color: #d22954;
+      color:color(red_caption);
       font-family: "Cinzel";
       margin: 30px 0;
     }
-    .btn-border {
-    border: solid 1px rgba(0,0,0,.3);
-    background: none;
-    padding: 5px 20px;
-    color: #333;
-    text-decoration: none!important;
+    .facilities{
+      color:color(green_facilities);
+      font-weight: bold;
+      font-size:85%;
+      line-height: 26px;
+      margin: 0 10px 15px 0;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+
+      span{
+        margin-right: 8px;
+      }
+    }
+    // .facilities:before {
+    //   content: "";
+    //   display: block;
+    //   background: url("../assets/imgs/icons/wifi_facility.png") no-repeat;
+      // width: 20px;
+      // height: 20px;
+    //   // float: left;
+    //   // margin: 0 6px 0 0;
+    // }
+
+  //   .btn-border {
+  //   border: solid 1px rgba(0,0,0,.3);
+  //   background: none;
+  //   padding: 5px 20px;
+  //   color: #333;
+  //   text-decoration: none!important;
+  //   cursor: pointer;
+
+  // }
+
+  .btn-success,.btn-info{
+    cursor: pointer
   }
 }
 .room-item:nth-child(odd) .overlay{
